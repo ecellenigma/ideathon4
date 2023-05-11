@@ -1,0 +1,136 @@
+:root{
+    --yellow: #F7F719;
+    --darkBlue: #0E2D3D;
+}
+
+.page2_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secHeading {
+    display: flex;
+    justify-content: center;
+    font-size: 40px !important;
+    font-weight: bold;
+    margin: 32px;
+    padding: 8px;
+    color: var(--darkBlue) !important;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F7F719;
+}
+
+.checkbox-group>* {
+    margin: 0.8rem 0.8rem;
+    padding: 4 rem;
+}
+
+.checkbox-group-legend {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9c9c9c;
+    text-align: center;
+    line-height: 1.125;
+    margin-bottom: 1.25rem;
+    padding: auto;
+}
+
+.checkbox-input:focus+.checkbox-tile {
+    border-color: #2260ff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.checkbox-input:focus+.checkbox-tile:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.checkbox-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    min-height: 200px;
+    border-radius: 0.5rem;
+    background-color: var(--darkBlue);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease;
+}
+
+.checkbox-tile:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #b5bfd9;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.checkbox-tile:hover {
+    border-color: #2260ff;
+}
+
+.checkbox-tile:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.checkbox-wrapper {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.checkbox-icon svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.checkbox-label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: 0.375s ease;
+    text-align: center;
+    margin-top: 3px;
+}
+
+fieldset {
+    border-width: 0;
+}
+
+.svg {
+    fill: none;
+    stroke-width: 3;
+    stroke: #fff;
+}
+
